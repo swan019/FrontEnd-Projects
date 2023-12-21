@@ -1,0 +1,157 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    
+}
+
+.blogs-container{
+    width: 70vw;
+    /* border: 1px solid black; */
+    margin: 0px auto;
+}
+
+header{
+    margin: 0px auto;
+    max-width: 568px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+header p{
+    font-size: 1rem;
+    color: rgb(81, 78, 78);
+}
+
+header h2{
+    font-size: 1.7rem;
+    color: rgb(55, 53, 53);
+}
+
+.blogs-cards{
+
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 600px){
+    .blogs-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1000px){
+    .blogs-cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 1800px){
+    .blogs-cards{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid rgba(80, 77, 77, 0.793);
+    background-color: 10px;
+    overflow: hidden;
+}
+
+
+
+.image-container{
+    position: relative; 
+    overflow: hidden;
+    height: 14rem;
+}
+
+.im2{
+    position: absolute;
+    object-position: center;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    /* border-radius: 10px 10px 0px 0px; */
+}
+
+.details-container{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.1rem;
+}
+
+.details-container h3{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.details-container p{
+    color: rgb(81, 68, 68);
+    font-size: 1rem;
+}
+
+.card:hover .im2{
+    transform: scale(1.1);
+    transition: 200ms;  
+}
+
+.discription-container{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    margin: 0 0.5rem;
+    align-items: center;
+}
+
+.profile-container{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+}
+
+.man{
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid rgb(157, 156, 156);
+    border-radius: 50%;
+    background-color: rgb(174, 169, 169);
+}
+
+button{
+    color: rgb(96, 95, 95);
+    border-radius: 8px;
+    padding: 0.25rem 0.50rem;
+    border: 1px solid rgb(77, 76, 76);
+    line-height: 1rem;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.name a{
+    color: rgb(49, 49, 202);
+}
+
+.name p{
+    color: gray;
+}
+
